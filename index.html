@@ -1,1 +1,743 @@
 
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Top 20 Cartões Crypto 2026 | Ranking Completo</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: linear-gradient(135deg, #0f0c29, #302b63, #24243e);
+            color: #fff;
+            line-height: 1.6;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+
+        header {
+            text-align: center;
+            padding: 40px 20px;
+            background: linear-gradient(135deg, #ff6b00, #ff8c00);
+            border-radius: 20px;
+            margin-bottom: 40px;
+            box-shadow: 0 10px 30px rgba(255, 107, 0, 0.3);
+        }
+
+        header h1 {
+            font-size: 2.5em;
+            margin-bottom: 10px;
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
+        }
+
+        header p {
+            font-size: 1.2em;
+            opacity: 0.9;
+        }
+
+        .section-title {
+            font-size: 2em;
+            margin: 40px 0 20px;
+            padding: 15px;
+            background: linear-gradient(90deg, #ff6b00, #ff8c00);
+            border-radius: 10px;
+            text-align: center;
+            box-shadow: 0 5px 15px rgba(255, 107, 0, 0.3);
+        }
+
+        .cards-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+            gap: 25px;
+            margin-bottom: 40px;
+        }
+
+        .card {
+            background: rgba(255, 255, 255, 0.05);
+            backdrop-filter: blur(10px);
+            border-radius: 15px;
+            padding: 25px;
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            transition: transform 0.3s, box-shadow 0.3s;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .card::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 4px;
+            background: linear-gradient(90deg, #ff6b00, #ff8c00);
+        }
+
+        .card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 15px 35px rgba(255, 107, 0, 0.2);
+        }
+
+        .card-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 15px;
+        }
+
+        .card-title {
+            font-size: 1.5em;
+            color: #ff8c00;
+            font-weight: bold;
+        }
+
+        .card-rank {
+            background: linear-gradient(135deg, #ff6b00, #ff8c00);
+            padding: 5px 15px;
+            border-radius: 20px;
+            font-weight: bold;
+            font-size: 0.9em;
+        }
+
+        .card-stars {
+            color: #ffd700;
+            margin-bottom: 15px;
+            font-size: 1.2em;
+        }
+
+        .card-tag {
+            display: inline-block;
+            background: rgba(255, 107, 0, 0.2);
+            color: #ff8c00;
+            padding: 5px 10px;
+            border-radius: 5px;
+            font-size: 0.85em;
+            margin: 5px 5px 5px 0;
+        }
+
+        .card-feature {
+            margin: 10px 0;
+            padding: 8px;
+            background: rgba(255, 255, 255, 0.05);
+            border-radius: 5px;
+            font-size: 0.95em;
+        }
+
+        .card-feature strong {
+            color: #ff8c00;
+        }
+
+        .highlight {
+            color: #00ff88;
+            font-weight: bold;
+        }
+
+        .warning {
+            color: #ff4444;
+            font-weight: bold;
+        }
+
+        .btn {
+            display: inline-block;
+            width: 100%;
+            padding: 15px;
+            margin-top: 15px;
+            background: linear-gradient(135deg, #ff6b00, #ff8c00);
+            color: white;
+            text-decoration: none;
+            border-radius: 10px;
+            text-align: center;
+            font-weight: bold;
+            transition: transform 0.2s, box-shadow 0.2s;
+            border: none;
+            cursor: pointer;
+            font-size: 1em;
+        }
+
+        .btn:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 5px 15px rgba(255, 107, 0, 0.4);
+        }
+
+        .btn-secondary {
+            background: rgba(255, 255, 255, 0.1);
+            border: 2px solid #ff8c00;
+        }
+
+        .btn-secondary:hover {
+            background: rgba(255, 107, 0, 0.2);
+        }
+
+        .disclaimer {
+            background: rgba(255, 68, 68, 0.1);
+            border: 2px solid #ff4444;
+            border-radius: 15px;
+            padding: 25px;
+            margin: 40px 0;
+            text-align: center;
+        }
+
+        .disclaimer h3 {
+            color: #ff4444;
+            margin-bottom: 15px;
+        }
+
+        .disclaimer p {
+            margin: 10px 0;
+            font-size: 0.95em;
+        }
+
+        footer {
+            text-align: center;
+            padding: 30px;
+            margin-top: 40px;
+            border-top: 1px solid rgba(255, 255, 255, 0.1);
+        }
+
+        .social-links {
+            margin: 20px 0;
+        }
+
+        .social-links a {
+            display: inline-block;
+            margin: 0 10px;
+            color: #ff8c00;
+            font-size: 1.5em;
+            transition: transform 0.2s;
+        }
+
+        .social-links a:hover {
+            transform: scale(1.2);
+        }
+
+        @media (max-width: 768px) {
+            header h1 {
+                font-size: 1.8em;
+            }
+            
+            .cards-grid {
+                grid-template-columns: 1fr;
+            }
+            
+            .section-title {
+                font-size: 1.5em;
+            }
+        }
+
+        .badge {
+            display: inline-block;
+            padding: 3px 8px;
+            border-radius: 5px;
+            font-size: 0.75em;
+            margin-left: 5px;
+            font-weight: bold;
+        }
+
+        .badge-new {
+            background: #00ff88;
+            color: #000;
+        }
+
+        .badge-hot {
+            background: #ff4444;
+            color: #fff;
+        }
+
+        .badge-nokyc {
+            background: #9b59b6;
+            color: #fff;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>🏆 Top 20 Cartões Crypto 2026</h1>
+            <p>Ranking Completo com Melhores Cashbacks e Taxas</p>
+            <p style="margin-top: 10px; font-size: 0.9em;">
+                <a href="https://linktr.ee/marcoscleberc" style="color: #fff; text-decoration: underline;">
+                    📱 linktr.ee/marcoscleberc
+                </a>
+            </p>
+        </header>
+
+        <!-- PARTE 1: TOP 10 TRADICIONAIS -->
+        <h2 class="section-title">📊 PARTE 1: TOP 10 - MELHORES CARTÕES (CRITÉRIOS TRADICIONAIS)</h2>
+        <p style="text-align: center; margin-bottom: 30px; opacity: 0.8;">
+            Foco: Cashback, taxas baixas/zeradas, recursos completos
+        </p>
+
+        <div class="cards-grid">
+            <!-- 1. ETHER.FI CASH CARD -->
+            <div class="card">
+                <div class="card-header">
+                    <h3 class="card-title">1. ETHER.FI CASH CARD</h3>
+                    <span class="card-rank">#1</span>
+                </div>
+                <div class="card-stars">⭐⭐⭐⭐⭐</div>
+                <span class="card-tag">Melhor para: Cashback Consistente + Self-Custody</span>
+                
+                <div class="card-feature"><strong>✅ CASHBACK:</strong> <span class="highlight">3%</span> (até 5% com bônus)</div>
+                <div class="card-feature"><strong>✅ TAXA FX:</strong> 1%</div>
+                <div class="card-feature"><strong>✅ INSCRIÇÃO:</strong> GRÁTIS</div>
+                <div class="card-feature"><strong>✅ RENDIMENTO:</strong> SIM (yield integrado)</div>
+                <div class="card-feature"><strong>✅ TIPO:</strong> Virtual + Físico</div>
+                <div class="card-feature"><strong>✅ REDE:</strong> VISA</div>
+                <div class="card-feature"><strong>✅ CUSTÓDIA:</strong> NÃO CUSTODIAL</div>
+                <div class="card-feature"><strong>💰 LIMITES:</strong> $250 (caixa), $30.000 (diário)</div>
+                
+                <a href="https://ether.fi/refer/a217ecdb" class="btn" target="_blank">
+                    🔥 ACESSAR ETHER.FI AGORA
+                </a>
+            </div>
+
+            <!-- 2. OKX CARD -->
+            <div class="card">
+                <div class="card-header">
+                    <h3 class="card-title">2. OKX CARD</h3>
+                    <span class="card-rank">#2</span>
+                </div>
+                <div class="card-stars">⭐⭐⭐⭐⭐</div>
+                <span class="card-tag">Melhor para: Taxa Zero + Alto Cashback</span>
+                
+                <div class="card-feature"><strong>✅ CASHBACK:</strong> <span class="highlight">ATÉ 5%</span></div>
+                <div class="card-feature"><strong>✅ TAXA FX:</strong> <span class="highlight">0%</span> 🎯</div>
+                <div class="card-feature"><strong>✅ INSCRIÇÃO:</strong> GRÁTIS</div>
+                <div class="card-feature"><strong>✅ TIPO:</strong> Virtual</div>
+                <div class="card-feature"><strong>✅ REDE:</strong> MASTERCARD</div>
+                <div class="card-feature"><strong>✅ CUSTÓDIA:</strong> NÃO CUSTODIAL</div>
+                <div class="card-feature"><strong>💰 LIMITE DIÁRIO:</strong> US$ 10.000</div>
+                <div class="card-feature"><strong>🌍 REGIÕES:</strong> UE, Noruega, <span class="highlight">BRASIL</span></div>
+                
+                <a href="https://okx.com/pt-br/join/5126561" class="btn" target="_blank">
+                    💳 ACESSAR OKX CARD
+                </a>
+            </div>
+
+            <!-- 3. READY CARD -->
+            <div class="card">
+                <div class="card-header">
+                    <h3 class="card-title">3. READY CARD</h3>
+                    <span class="card-rank">#3</span>
+                </div>
+                <div class="card-stars">⭐⭐⭐⭐⭐</div>
+                <span class="card-tag">Melhor para: Self-Custody Total + Taxas Zero</span>
+                
+                <div class="card-feature"><strong>✅ CASHBACK:</strong> 3% em USDC</div>
+                <div class="card-feature"><strong>✅ TAXA FX:</strong> <span class="highlight">0%</span></div>
+                <div class="card-feature"><strong>✅ INSCRIÇÃO:</strong> GRÁTIS</div>
+                <div class="card-feature"><strong>✅ TIPO:</strong> Virtual + Físico</div>
+                <div class="card-feature"><strong>✅ REDE:</strong> MASTERCARD</div>
+                <div class="card-feature"><strong>✅ CUSTÓDIA:</strong> SELF-CUSTODY (Starknet)</div>
+                <div class="card-feature"><strong>✅ SEM TAXAS ESCONDIDAS</strong></div>
+                
+                <a href="https://www.todey.xyz/comparison/" class="btn btn-secondary" target="_blank">
+                    📊 VER DETALHES NO TODEY
+                </a>
+            </div>
+
+            <!-- 4. SWISSBORG CARD -->
+            <div class="card">
+                <div class="card-header">
+                    <h3 class="card-title">4. SWISSBORG CARD</h3>
+                    <span class="card-rank">#4</span>
+                </div>
+                <div class="card-stars">⭐⭐⭐⭐</div>
+                <span class="card-tag">Melhor para: Cashback Extremo (Tier Elite)</span>
+                
+                <div class="card-feature"><strong>✅ CASHBACK:</strong> <span class="highlight">Até 99%</span> (tier Elite/$BORG)</div>
+                <div class="card-feature"><strong>✅ TAXA FX:</strong> 0.99%</div>
+                <div class="card-feature"><strong>✅ TIPO:</strong> Virtual</div>
+                <div class="card-feature"><strong>✅ REDE:</strong> MASTERCARD</div>
+                <div class="card-feature"><strong>✅ MULTI-CHAIN:</strong> SIM</div>
+                <div class="card-feature"><strong>🌍 REGIÕES:</strong> 30+ países</div>
+                
+                <a href="https://www.todey.xyz/comparison/" class="btn btn-secondary" target="_blank">
+                    📊 VER DETALHES NO TODEY
+                </a>
+            </div>
+
+            <!-- 5. CRYPTO.COM CARD -->
+            <div class="card">
+                <div class="card-header">
+                    <h3 class="card-title">5. CRYPTO.COM CARD</h3>
+                    <span class="card-rank">#5</span>
+                </div>
+                <div class="card-stars">⭐⭐⭐⭐</div>
+                <span class="card-tag">Melhor para: Tiers Premium (Obsidian/Prime)</span>
+                
+                <div class="card-feature"><strong>✅ CASHBACK:</strong> <span class="highlight">Até 8%</span> (tier Prime)</div>
+                <div class="card-feature"><strong>✅ TAXA FX:</strong> 0% (tiers superiores)</div>
+                <div class="card-feature"><strong>✅ TIPO:</strong> Virtual + Físico</div>
+                <div class="card-feature"><strong>✅ REDE:</strong> VISA</div>
+                <div class="card-feature"><strong>⚠️ STAKING:</strong> $45K-$1M CRO para tiers premium</div>
+                <div class="card-feature"><strong>💰 LIMITES:</strong> $200-$1,000 (ATM), $15K-$25K (diário)</div>
+                
+                <a href="https://crypto.com/app/94cf85cfwx" class="btn" target="_blank">
+                    🎁 ACESSAR CRYPTO.COM
+                </a>
+            </div>
+
+            <!-- 6. NEXO CARD -->
+            <div class="card">
+                <div class="card-header">
+                    <h3 class="card-title">6. NEXO CARD</h3>
+                    <span class="card-rank">#6</span>
+                </div>
+                <div class="card-stars">⭐⭐⭐⭐</div>
+                <span class="card-tag">Melhor para: Dual Mode (Crédito/Débito)</span>
+                
+                <div class="card-feature"><strong>✅ CASHBACK:</strong> Até 2% em crypto</div>
+                <div class="card-feature"><strong>✅ RENDIMENTO:</strong> <span class="highlight">Até 14% APY</span></div>
+                <div class="card-feature"><strong>✅ MODO DUPLO:</strong> Crédito/Débito com um toque</div>
+                <div class="card-feature"><strong>✅ TIPO:</strong> Dual-mode card</div>
+                <div class="card-feature"><strong>🌍 REGIÕES:</strong> Global</div>
+                
+                <a href="https://www.todey.xyz/comparison/" class="btn btn-secondary" target="_blank">
+                    📊 VER DETALHES NO TODEY
+                </a>
+            </div>
+
+            <!-- 7. BITGET WALLET CARD -->
+            <div class="card">
+                <div class="card-header">
+                    <h3 class="card-title">7. BITGET WALLET CARD</h3>
+                    <span class="card-rank">#7</span>
+                </div>
+                <div class="card-stars">⭐⭐⭐⭐</div>
+                <span class="card-tag">Melhor para: Cashback Generoso + APY</span>
+                
+                <div class="card-feature"><strong>✅ CASHBACK:</strong> <span class="highlight">Até 20%</span> (promocional)</div>
+                <div class="card-feature"><strong>✅ CASHBACK PADRÃO:</strong> 5% BGB (primeiros 3 meses)</div>
+                <div class="card-feature"><strong>✅ TAXAS:</strong> $0 aplicação/anual</div>
+                <div class="card-feature"><strong>✅ MOBILE PAY:</strong> Apple Pay, Google Pay</div>
+                <div class="card-feature"><strong>✅ RECURSOS:</strong> 2% cashback mensal recorrente</div>
+                <div class="card-feature"><strong>🌍 REGIÕES:</strong> APAC, <span class="highlight">BRASIL</span></div>
+                
+                <a href="https://share.bitget.com/u/SCZX48ZV?clacCode=6CTUL240" class="btn" target="_blank">
+                    💰 ACESSAR BITGET WALLET
+                </a>
+            </div>
+
+            <!-- 8. MEXC × ETHER.FI CARD -->
+            <div class="card">
+                <div class="card-header">
+                    <h3 class="card-title">8. MEXC × ETHER.FI CARD</h3>
+                    <span class="card-rank">#8</span>
+                </div>
+                <div class="card-stars">⭐⭐⭐</div>
+                <span class="card-tag">Melhor para: APR Alto + Cashback Extra</span>
+                
+                <div class="card-feature"><strong>✅ CASHBACK:</strong> <span class="highlight">4%</span> (3% + 1% extra)</div>
+                <div class="card-feature"><strong>✅ APR:</strong> Até 10%</div>
+                <div class="card-feature"><strong>✅ TAXA FX:</strong> 1%</div>
+                <div class="card-feature"><strong>✅ CUSTÓDIA:</strong> NÃO CUSTODIAL</div>
+                <div class="card-feature"><strong>⚠️ REQUISITOS:</strong> KYC avançado + $100 USDT depósito</div>
+                <div class="card-feature"><strong>✅ BÔNUS:</strong> $15 USDT airdrop</div>
+                
+                <a href="https://promote.mexc.com/r/6ekeguuA" class="btn" target="_blank">
+                    🚀 ACESSAR MEXC CARD
+                </a>
+            </div>
+
+            <!-- 9. GNOSIS PAY CARD -->
+            <div class="card">
+                <div class="card-header">
+                    <h3 class="card-title">9. GNOSIS PAY CARD</h3>
+                    <span class="card-rank">#9</span>
+                </div>
+                <div class="card-stars">⭐⭐⭐⭐</div>
+                <span class="card-tag">Melhor para: Self-Custody Avançado</span>
+                
+                <div class="card-feature"><strong>✅ CASHBACK:</strong> Até 5% em GNO</div>
+                <div class="card-feature"><strong>✅ TAXAS:</strong> <span class="highlight">ZERO</span> (transação, FX, ATM)</div>
+                <div class="card-feature"><strong>✅ CUSTÓDIA:</strong> SELF-CUSTODY (Gnosis Safe)</div>
+                <div class="card-feature"><strong>✅ REDE:</strong> VISA</div>
+                <div class="card-feature"><strong>✅ TVL:</strong> $100B+</div>
+                <div class="card-feature"><strong>⚠️ COMPLEXIDADE:</strong> Mais técnico</div>
+                
+                <a href="https://www.todey.xyz/comparison/" class="btn btn-secondary" target="_blank">
+                    📊 VER DETALHES NO TODEY
+                </a>
+            </div>
+
+            <!-- 10. AMP BLACK CARD -->
+            <div class="card">
+                <div class="card-header">
+                    <h3 class="card-title">10. AMP BLACK CARD</h3>
+                    <span class="card-rank">#10</span>
+                </div>
+                <div class="card-stars">⭐⭐⭐⭐</div>
+                <span class="card-tag">Melhor para: Múltiplas Regiões + APY</span>
+                
+                <div class="card-feature"><strong>✅ CASHBACK:</strong> ATÉ 4%</div>
+                <div class="card-feature"><strong>✅ TAXA FX:</strong> 1%</div>
+                <div class="card-feature"><strong>✅ INSCRIÇÃO:</strong> GRÁTIS</div>
+                <div class="card-feature"><strong>✅ APY:</strong> Até 12% em savings</div>
+                <div class="card-feature"><strong>✅ TIPO:</strong> Virtual + Físico</div>
+                <div class="card-feature"><strong>✅ SEM CRÉDITO:</strong> Sem verificação de crédito</div>
+                
+                <a href="https://www.todey.xyz/comparison/" class="btn btn-secondary" target="_blank">
+                    📊 VER DETALHES NO TODEY
+                </a>
+            </div>
+        </div>
+
+        <!-- PARTE 2: TOP 10 NO-KYC -->
+        <h2 class="section-title">🔐 PARTE 2: TOP 10 - SEM KYC OU KYC MÍNIMO</h2>
+        <p style="text-align: center; margin-bottom: 30px; opacity: 0.8;">
+            Foco: Privacidade, anonimato, verificação simplificada
+        </p>
+
+        <div class="cards-grid">
+            <!-- 1. BING CARD -->
+            <div class="card">
+                <div class="card-header">
+                    <h3 class="card-title">1. BING CARD <span class="badge badge-nokyc">NO-KYC</span></h3>
+                    <span class="card-rank">#11</span>
+                </div>
+                <div class="card-stars">⭐⭐⭐⭐⭐</div>
+                <span class="card-tag">Melhor No-KYC Virtual</span>
+                
+                <div class="card-feature"><strong>✅ KYC:</strong> <span class="highlight">NÃO</span> (virtual) / SIM (físico)</div>
+                <div class="card-feature"><strong>✅ TAXA FX:</strong> 1.5%</div>
+                <div class="card-feature"><strong>✅ TAXA SAQUE:</strong> 2%</div>
+                <div class="card-feature"><strong>✅ TIPO:</strong> Virtual (5 min) + Físico</div>
+                <div class="card-feature"><strong>✅ REDE:</strong> VISA/Mastercard</div>
+                <div class="card-feature"><strong>✅ MOEDAS:</strong> BTC, ETH, USDT, USDC</div>
+                <div class="card-feature"><strong>💰 TAXAS:</strong> $25 setup (Exclusive), $1/mês</div>
+                <div class="card-feature"><strong>📊 LIMITES:</strong> $100K-$200K (tier)</div>
+                
+                <a href="https://www.todey.xyz/comparison/" class="btn btn-secondary" target="_blank">
+                    📊 VER DETALHES NO TODEY
+                </a>
+            </div>
+
+            <!-- 2. SOLCARD -->
+            <div class="card">
+                <div class="card-header">
+                    <h3 class="card-title">2. SOLCARD <span class="badge badge-nokyc">NO-KYC</span></h3>
+                    <span class="card-rank">#12</span>
+                </div>
+                <div class="card-stars">⭐⭐⭐⭐</div>
+                <span class="card-tag">Melhor para: No-KYC com Apple/Google Pay</span>
+                
+                <div class="card-feature"><strong>✅ KYC:</strong> <span class="highlight">NÃO</span> (tier básico)</div>
+                <div class="card-feature"><strong>✅ TIPO:</strong> Virtual</div>
+                <div class="card-feature"><strong>✅ REDE:</strong> MASTERCARD</div>
+                <div class="card-feature"><strong>✅ MOEDAS:</strong> USDT, USDC (multi-redes)</div>
+                <div class="card-feature"><strong>✅ MOBILE PAY:</strong> SIM (tier verificado)</div>
+                <div class="card-feature"><strong>💰 TAXAS:</strong> $10 emissão, 5% top-up, $0.30/transação</div>
+                
+                <a href="https://www.todey.xyz/comparison/" class="btn btn-secondary" target="_blank">
+                    📊 VER DETALHES NO TODEY
+                </a>
+            </div>
+
+            <!-- 3. LASO FINANCE -->
+            <div class="card">
+                <div class="card-header">
+                    <h3 class="card-title">3. LASO FINANCE <span class="badge badge-nokyc">NO-KYC</span></h3>
+                    <span class="card-rank">#13</span>
+                </div>
+                <div class="card-stars">⭐⭐⭐⭐</div>
+                <span class="card-tag">Melhor para: Stablecoin Prepaid No-KYC</span>
+                
+                <div class="card-feature"><strong>✅ KYC:</strong> <span class="highlight">NÃO</span></div>
+                <div class="card-feature"><strong>✅ TIPO:</strong> Virtual (instantâneo)</div>
+                <div class="card-feature"><strong>✅ REDE:</strong> VISA</div>
+                <div class="card-feature"><strong>✅ MOEDAS:</strong> USDC, USDT</div>
+                <div class="card-feature"><strong>✅ CUSTÓDIA:</strong> Wallet connect</div>
+                <div class="card-feature"><strong>🌍 REGIÕES:</strong> Global</div>
+                
+                <a href="https://www.todey.xyz/comparison/" class="btn btn-secondary" target="_blank">
+                    📊 VER DETALHES NO TODEY
+                </a>
+            </div>
+
+            <!-- 4. DIGITAP -->
+            <div class="card">
+                <div class="card-header">
+                    <h3 class="card-title">4. DIGITAP <span class="badge badge-nokyc">NO-KYC</span></h3>
+                    <span class="card-rank">#14</span>
+                </div>
+                <div class="card-stars">⭐⭐⭐⭐</div>
+                <span class="card-tag">Melhor para: No-KYC + Banking Híbrido</span>
+                
+                <div class="card-feature"><strong>✅ KYC:</strong> <span class="highlight">NÃO</span> (Wallet Plan básico)</div>
+                <div class="card-feature"><strong>✅ TIPO:</strong> Virtual Visa</div>
+                <div class="card-feature"><strong>✅ REDE:</strong> VISA</div>
+                <div class="card-feature"><strong>✅ MOEDAS:</strong> Crypto + Fiat</div>
+                <div class="card-feature"><strong>✅ VANTAGEM:</strong> Link crypto/fiat mesmo card</div>
+                
+                <a href="https://www.todey.xyz/comparison/" class="btn btn-secondary" target="_blank">
+                    📊 VER DETALHES NO TODEY
+                </a>
+            </div>
+
+            <!-- 5. BANCUS -->
+            <div class="card">
+                <div class="card-header">
+                    <h3 class="card-title">5. BANCUS <span class="badge badge-nokyc">SIMPLIFIED KYC</span></h3>
+                    <span class="card-rank">#15</span>
+                </div>
+                <div class="card-stars">⭐⭐⭐</div>
+                <span class="card-tag">Melhor para: LATAM + Simplified KYC</span>
+                
+                <div class="card-feature"><strong>✅ KYC:</strong> Simplificado</div>
+                <div class="card-feature"><strong>✅ TIPO:</strong> Prepaid debit</div>
+                <div class="card-feature"><strong>✅ MOEDAS:</strong> Multi-crypto</div>
+                <div class="card-feature"><strong>✅ TRANSFERÊNCIAS:</strong> Grátis entre usuários</div>
+                <div class="card-feature"><strong>💰 TAXAS:</strong> $75 card fee, 4% top-up</div>
+                <div class="card-feature"><strong>📊 LIMITES:</strong> $50K load, $500/dia ATM</div>
+                <div class="card-feature"><strong>🌍 REGIÕES:</strong> Principalmente LATAM</div>
+                
+                <a href="https://www.todey.xyz/comparison/" class="btn btn-secondary" target="_blank">
+                    📊 VER DETALHES NO TODEY
+                </a>
+            </div>
+
+            <!-- 6. UUPAY -->
+            <div class="card">
+                <div class="card-header">
+                    <h3 class="card-title">6. UUPAY <span class="badge badge-nokyc">BASIC KYC</span></h3>
+                    <span class="card-rank">#16</span>
+                </div>
+                <div class="card-stars">⭐⭐⭐</div>
+                <span class="card-tag">Melhor para: Sudeste Asiático + Baixas Taxas</span>
+                
+                <div class="card-feature"><strong>✅ KYC:</strong> Básico</div>
+                <div class="card-feature"><strong>✅ TIPO:</strong> Virtual</div>
+                <div class="card-feature"><strong>✅ MOEDAS:</strong> USDT</div>
+                <div class="card-feature"><strong>💰 TAXAS:</strong> $1 virtual, 0.5%-1% recarga</div>
+                <div class="card-feature"><strong>📊 LIMITES:</strong> Virtual: $20K, Premier: $100K</div>
+                <div class="card-feature"><strong>🌍 REGIÕES:</strong> Sudeste Asiático</div>
+                
+                <a href="https://www.todey.xyz/comparison/" class="btn btn-secondary" target="_blank">
+                    📊 VER DETALHES NO TODEY
+                </a>
+            </div>
+
+            <!-- 7. TUYO CARD -->
+            <div class="card">
+                <div class="card-header">
+                    <h3 class="card-title">7. TUYO CARD <span class="badge badge-nokyc">SELF-CUSTODY</span></h3>
+                    <span class="card-rank">#17</span>
+                </div>
+                <div class="card-stars">⭐⭐⭐⭐</div>
+                <span class="card-tag">Melhor para: Self-Custody + Brasil/LATAM</span>
+                
+                <div class="card-feature"><strong>✅ KYC:</strong> Mínimo (self-custody)</div>
+                <div class="card-feature"><strong>✅ TIPO:</strong> Virtual</div>
+                <div class="card-feature"><strong>✅ REDE:</strong> VISA</div>
+                <div class="card-feature"><strong>✅ MOEDAS:</strong> USDC (Base)</div>
+                <div class="card-feature"><strong>✅ CUSTÓDIA:</strong> SELF-CUSTODY</div>
+                <div class="card-feature"><strong>✅ MOBILE PAY:</strong> Apple Pay</div>
+                <div class="card-feature"><strong>✅ TAXA CRYPTO-FIAT:</strong> 0%</div>
+                <div class="card-feature"><strong>📊 LIMITES:</strong> $200/dia</div>
+                <div class="card-feature"><strong>🌍 REGIÕES:</strong> <span class="highlight">BRASIL</span>, LATAM, Global</div>
+                
+                <a href="https://get.tuyo.com/code/DGGNSU" class="btn" target="_blank">
+                    🇧🇷 ACESSAR TUYO CARD
+                </a>
+            </div>
+
+            <!-- 8. COINSBEE -->
+            <div class="card">
+                <div class="card-header">
+                    <h3 class="card-title">8. COINSBEE <span class="badge badge-nokyc">GIFT CARDS</span></h3>
+                    <span class="card-rank">#18</span>
+                </div>
+                <div class="card-stars">⭐⭐⭐</div>
+                <span class="card-tag">Melhor para: Gift Cards (Alternativa)</span>
+                
+                <div class="card-feature"><strong>✅ KYC:</strong> <span class="highlight">&lt; €1K sem KYC</span></div>
+                <div class="card-feature"><strong>✅ TIPO:</strong> Gift cards (não é debit card)</div>
+                <div class="card-feature"><strong>✅ MOEDAS:</strong> 200+ cryptos</div>
+                <div class="card-feature"><strong>✅ MARCAS:</strong> 5,000+ (Amazon, Netflix, etc.)</div>
+                <div class="card-feature"><strong>📊 LIMITES:</strong> €1K por order, €10K total sem KYC</div>
+                <div class="card-feature"><strong>🌍 REGIÕES:</strong> 185+ países</div>
+                
+                <a href="https://www.todey.xyz/comparison/" class="btn btn-secondary" target="_blank">
+                    📊 VER DETALHES NO TODEY
+                </a>
+            </div>
+
+            <!-- 9. BITGET WALLET CARD (REPEAT) -->
+            <div class="card">
+                <div class="card-header">
+                    <h3 class="card-title">9. BITGET WALLET CARD <span class="badge badge-nokyc">KYC LEVE</span></h3>
+                    <span class="card-rank">#19</span>
+                </div>
+                <div class="card-stars">⭐⭐⭐⭐</div>
+                <span class="card-tag">Melhor para: Cashback + KYC Leve</span>
+                
+                <div class="card-feature"><strong>✅ KYC:</strong> Básico</div>
+                <div class="card-feature"><strong>✅ CASHBACK:</strong> <span class="highlight">Até 20%</span> (promocional)</div>
+                <div class="card-feature"><strong>✅ TAXAS:</strong> $0 aplicação/anual</div>
+                <div class="card-feature"><strong>✅ MOBILE PAY:</strong> Apple Pay, Google Pay</div>
+                <div class="card-feature"><strong>✅ RECURSOS:</strong> APY sem staking obrigatório</div>
+                <div class="card-feature"><strong>🌍 REGIÕES:</strong> APAC, <span class="highlight">BRASIL</span></div>
+                
+                <a href="https://share.bitget.com/u/SCZX48ZV?clacCode=6CTUL240" class="btn" target="_blank">
+                    💰 ACESSAR BITGET WALLET
+                </a>
+            </div>
+
+            <!-- 10. ALTERNATIVAS -->
+            <div class="card">
+                <div class="card-header">
+                    <h3 class="card-title">10. ALTERNATIVAS NO-KYC</h3>
+                    <span class="card-rank">#20</span>
+                </div>
+                <div class="card-stars">⭐⭐⭐</div>
+                <span class="card-tag">Menções Honrosas No-KYC</span>
+                
+                <div class="card-feature"><strong>• LinkPay</strong> - No-KYC limitado</div>
+                <div class="card-feature"><strong>• KripiCard</strong> - Mercados emergentes</div>
+                <div class="card-feature"><strong>• Bitrefill</strong> - Gift cards crypto</div>
+                <div class="card-feature"><strong>⚠️ NOTA:</strong> Verificar disponibilidade atual</div>
+                
+                <a href="https://www.todey.xyz/comparison/" class="btn btn-secondary" target="_blank">
+                    📊 EXPLORAR NO TODEY
+                </a>
+            </div>
+        </div>
+
+        <!-- DISCLAIMER -->
+        <div class="disclaimer">
+            <h3>⚠️ AVISOS IMPORTANTES</h3>
+            <p><strong>DYOR - Faça sua própria pesquisa</strong></p>
+            <p>Nenhuma ferramenta é 100% infalível. Sempre verifique as redes oficiais antes de interagir.</p>
+            <p>Operar em DeFi envolve riscos. Nunca compartilhe sua seed phrase.</p>
+            <p style="margin-top: 15px; font-weight: bold; color: #ff8c00;">#notyourkeysnotyourcoins</p>
+        </div>
+
+        <!-- FOOTER -->
+        <footer>
+            <div class="social-links">
+                <a href="https://linktr.ee/marcoscleberc" target="_blank">🔗</a>
+            </div>
+            <p style="margin-bottom: 10px;">
+                <a href="https://linktr.ee/marcoscleberc" style="color: #ff8c00; text-decoration: none; font-weight: bold;">
+                    linktr.ee/marcoscleberc
+                </a>
+            </p>
+            <p style="opacity: 0.7; font-size: 0.9em;">
+                © 2026 - Todos os direitos reservados<br>
+                Fontes: TODEY.XYZ, CryptoSlate, CoinGape, Bitcoin.com
+            </p>
+        </footer>
+    </div>
+</body>
+</html>
